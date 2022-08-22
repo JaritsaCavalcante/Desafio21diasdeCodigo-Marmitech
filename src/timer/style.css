@@ -1,0 +1,19 @@
+div{
+  text-align: center;
+}
+
+button{
+  height: 2.2em;
+  width: 5.5em;
+  border: none;
+  color: aliceblue;
+}
+.inicio{
+  background-color: rgb(85, 0, 165);
+}
+.pausa{
+  background-color: rgb(0, 75, 50);
+}
+.para{
+  background-color: rgb(160, 33, 33);
+}
