@@ -1,3 +1,10 @@
+body {
+  background-color: rgb(112, 112, 112);
+}
+h1 {
+  color: white;
+}
+
 div{
   text-align: center;
 }
@@ -6,7 +13,10 @@ button{
   height: 2.2em;
   width: 5.5em;
   border: none;
-  color: aliceblue;
+  color: white;
+}
+button:hover{
+  cursor: pointer;
 }
 .inicio{
   background-color: rgb(85, 0, 165);
