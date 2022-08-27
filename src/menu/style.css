@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+.nav-button {
+  border: 0;
+  border-radius: 4px;
+  padding: 8px;
+  background-color: blueviolet;
+  margin: 8px;
+  cursor: pointer;
+}
+
+.nav-button i {
+  color: azure;
+}
+
+.overlay {
+  width: 0;
+  height: 100%;
+  background-color: black;
+  z-index: 9;
+  position: fixed;
+  overflow-x: hidden;
+  transition: all 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  color: aquamarine;
+  display: block;
+  font-size: 34px;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: rgb(255, 255, 255);
+}
+.overlay .closebtn {
+  position: absolute;
+  top: 25px;
+  right: 45px;
+  font-size: 60px;
+}
