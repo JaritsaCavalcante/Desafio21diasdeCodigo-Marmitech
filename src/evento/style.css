@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  position: auto;
+  text-align: center;
+  
+}
+
+.tudo {
+  position: absolute;
+  background-color: rgb(255, 94, 0);
+  top: 50%;
+  left: 42%;
+  border-radius: 15px;
+  padding: 30px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+}
+
+
+
