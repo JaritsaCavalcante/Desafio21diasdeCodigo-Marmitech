@@ -1,0 +1,169 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+html {
+	/* Variaveis de cores */
+	--bg-dark1: #21232C;
+	--bg-dark2: #161B22;
+	--bg-white1: #FFFFFF;
+	--bg-white2: #E4E7EC;
+	--text-dark: #1C2431;
+	--text-white: #FBFBFB;
+	--tomato: #FF5252;
+	--greem: #00DF89;
+	--greem2: #00804f;
+	--blue1: #348BFE;
+
+	font-size: 62.5%;
+}
+
+body {
+	background: #213A5A;
+	color: var(--bg-white1);
+	transition: all 0.2s linear;
+	min-height: 100vh;
+}
+
+.header-content {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 1010px;
+	margin: 0 auto;
+	color: #FEFEFE;
+	margin-top: 4px;
+
+}
+
+h1 {
+	font-size: 32px;
+}
+
+a {
+	text-decoration: none;
+	color: var(--greem);
+}
+
+p {
+	font-size: 1.8rem;
+}
+
+main {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+.content {
+	background-color: #1C2431;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	width: 380px;
+	border-radius: 6px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 24px;
+}
+
+.display {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 80px;
+	height: 80px;
+	border: 2px solid #00DF89;
+	border-radius: 8px;
+	padding: 8px;
+	margin: 32px 0;
+}
+
+.wrapper-emojis {
+	max-height: 350px;
+	overflow: auto;
+	border: 1px solid #555;
+	border-radius: 8px;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: rgba(0, 223, 137, .7);
+	border-radius: 6px;
+	opacity: .6;
+	transition: opacity ease 2.s;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: rgba(0, 223, 137, 1);
+}
+
+.wrapper-emojis span {
+	font-size: 28px;
+	cursor: pointer;
+	margin: 3px;
+}
+
+.wrapper-emojis span:hover {
+	transform: rotate(45deg);
+}
+
+.tooltip {
+	position: relative;
+	display: inline-block;
+}
+
+.emoji {
+	font-size: 46px;
+}
+
+.myTooltip {
+	display: none;
+	opacity: 0;
+}
+
+.tooltiptext {
+	display: block;
+	opacity: 1;
+	width: 80px;
+	background-color: #213A5A;
+	color: #FBFBFB;
+	text-align: center;
+	border-radius: 6px;
+	padding: 10px 5px;
+	position: absolute;
+	z-index: 1;
+	bottom: 120%;
+	left: 50%;
+	margin-left: -39px;
+	font-size: 1.6rem;
+	transition: opacity 0.3s;
+}
+
+.tooltiptext::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #213A5A transparent transparent transparent;
+}
